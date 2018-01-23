@@ -15,7 +15,6 @@ $(document).ready(function() {
      * A new object of the given type will be created and added
      * to the stage.
      */
-    console.log(this);
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
     // get the maker function for the kind of dancer we're supposed to make
@@ -29,7 +28,7 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
-    // $('body').append('<img class='squirtle imageRot' src='https://uploads.scratch.mit.edu/users/avatars/18632851.png'>');
+    window.dancers.push(dancer.$node);
   });
   
 });

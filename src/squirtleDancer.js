@@ -1,9 +1,11 @@
 var SquirtleDancer = function(top, left, timeBetweenSteps) {
 
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<img class=\'squirtle\' id="squirtle" src="https://uploads.scratch.mit.edu/users/avatars/18632851.png">');
+  
+  this.$node = $('<span class = \'squirtle\'> <img class=\'spin squirtle\' src="/Users/student/code/hrsf89-subclass-dance-party/Walking Squirtle.png"></span>');
   
   this.setPosition(this.top, this.left);
+  //console.log(window.dancers);
 };
 
 SquirtleDancer.prototype = Object.create(Dancer.prototype);

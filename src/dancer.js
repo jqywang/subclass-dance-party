@@ -47,3 +47,35 @@ Dancer.prototype.setPosition = function () {
   };
   this.$node.css(styleSettings);
 };
+
+Dancer.prototype.lineUp = function (index, leftRight) {
+  //leftRight is a string either 'left' or 'right'
+  //index is index in the big array of things
+  var styleSettings = {
+    top: (index * 80) + 18,
+    left: this.left,
+    float: leftRight
+  };
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
