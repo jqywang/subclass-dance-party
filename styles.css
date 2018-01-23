@@ -25,7 +25,11 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
-#squirtle {
+img {
+  width: 120px;
+  height: auto;
+}
+.squirtle {
   size: 50%;
 }
 .imageRot {
