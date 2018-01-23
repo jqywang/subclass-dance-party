@@ -28,8 +28,9 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
-    console.log(dancer);
-    window.dancers.push(dancer);
+    if (dancer.type !== 'gyarados') {
+      window.dancers.push(dancer);
+    }
   });
   
 });

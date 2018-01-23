@@ -14,13 +14,13 @@ body, a:link, a:visited, a:active{
   color: lightblue;
 }
 .fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
 }
 
 @keyframes swing {
@@ -33,11 +33,11 @@ body, a:link, a:visited, a:active{
 }
 
 .fullscreen-bg__video {
-    /*position: absolute;*/
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 video {
   -webkit-transform: scaleX(2);
@@ -60,7 +60,12 @@ video {
   border-radius:10px;
   position:absolute;
 }
-
+.squareUp {
+  padding: 0;
+  margin: auto;
+  display: inline-block;
+  width: 500px;
+}
 .gyarados {
   position:absolute;
   width: 500px;

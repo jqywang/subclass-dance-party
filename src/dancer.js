@@ -38,6 +38,17 @@ Dancer.prototype.lineUp = function (i, side) {
   }
   this.$node.animate(styleSettings, 'slow');
 };
+Dancer.prototype.squareUp = function (i, side) {
+  if (side === 'top') {
+    i = i % 4;
+  } else if (side === 'left') {
+    
+  } else if (side === 'right') {
+    
+  } else {
+    
+  }
+};
 
 
 
