@@ -25,8 +25,6 @@ BlinkyDancer.prototype.constructor = BlinkyDancer;
 
 BlinkyDancer.prototype.step = function () {
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
-  console.log(this.timeBetweenSteps);
-  console.log('infinite');
   this.$node.toggle();
 };
 
