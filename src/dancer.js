@@ -48,14 +48,23 @@ Dancer.prototype.setPosition = function () {
   this.$node.css(styleSettings);
 };
 
-Dancer.prototype.lineUp = function (index, leftRight) {
+Dancer.prototype.lineUp = function (i, side) {
   //leftRight is a string either 'left' or 'right'
   //index is index in the big array of things
-  var styleSettings = {
-    top: (index * 80) + 18,
-    left: this.left,
-    float: leftRight
-  };
+  if (side === 'left') {
+    var styleSettings = {
+      margin: '10px 10px',
+      left: ((i * 30) + 9),
+      top: 170 + i * 10
+    };
+  } else if (side === 'right') {
+    var styleSettings = {
+      top: 670 - i * 10,
+      left: ((i * 30) - 6),
+      margin: '10px 10px'
+    };
+  }
+  this.$node.animate(styleSettings, 'slow');
 };
 
 
