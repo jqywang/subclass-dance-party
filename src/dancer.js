@@ -12,10 +12,10 @@ var Dancer = function(top, left, timeBetweenSteps) {
 Dancer.prototype.step = function () {
   setTimeout(this.step, this.timeBetweenSteps);
 };
-Dancer.prototype.setPosition = function () {
+Dancer.prototype.setPosition = function (top, left) {
   var styleSettings = {
     top: this.top,
-    left: this.left
+    left: left
   };
   this.$node.css(styleSettings);
 };

@@ -16,4 +16,10 @@ $(document).ready(function() {
       }
     });
   });
+  
+  $(document.body).on('click', '#spawnGyarados', function () {
+    $('#gyarados').animate({top: 0, left: -1460}, 5000);
+  });
+  
+  
 });

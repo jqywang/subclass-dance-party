@@ -7,7 +7,8 @@ body{
   font-size: 18px;
 }
 a {
-  z-index: 1;
+  z-index: 2;
+  position: relative;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -22,12 +23,26 @@ body, a:link, a:visited, a:active{
     z-index: -100;
 }
 
+@keyframes swing {
+  0%, 100% { transform: rotate(-30deg); }
+  50% { transform: rotate(30deg); }
+}
+
+#gyarados {
+  animation: swing 2s infinite ease-in-out;
+}
+
 .fullscreen-bg__video {
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+video {
+  -webkit-transform: scaleX(2);
+  -moz-transform: scaleX(2);
+  object-fit: fill
 }
 .title, .addDancerButton{
   padding:5px 12px;
