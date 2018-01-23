@@ -28,6 +28,7 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    $('body').append('<img id="squirtle" src="https://uploads.scratch.mit.edu/users/avatars/18632851.png">');
   });
 });
 
