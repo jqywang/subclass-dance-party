@@ -4,7 +4,7 @@ $(document).ready(function() {
       $(this).removeClass('imageRot'); //remove anim class
     });
   }); 
-  $(document.body).on('click', '.gyarados', function (e) {
+  $(document.body).on('click', '.pokemon', function (e) {
     var $pokeball = $('<img class = "image-wrapper" src="/Users/student/code/hrsf89-subclass-dance-party/pokeball_gif.gif"/>');
     $(this).stop().css({'left': e.pageX - 10 + 'px', 'top': e.pageY + 'px'})
       .append($pokeball)
