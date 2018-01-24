@@ -9,18 +9,20 @@
     <script src="src/blinkyDancer.js"></script>
     <script src="src/animations.js"></script>
     <script src="src/squirtleDancer.js"></script>
-    <script  src="src/GyaradosDancer.js"></script>
+    <script src="src/GyaradosDancer.js"></script>
+    <script src="src/PokeballDancer.js"></script>
+    <script src="src/MissPokeballDancer.js"></script>
   </head>
   <body>
     <div class="topbar">
-      <span class="title">PokeGroove &trade; </span>
+      <span class="title">Click a Pokemon to catch it! PokeGroove &trade; </span>
       <button type = 'button' href = '#' class = 'addDancerButton' data-dancer-maker-function-name = 'SquirtleDancer'>add a spinny turtle</button>
       <button type = 'button' href='#' id= 'spawnGyarados' class='addDancerButton' data-dancer-maker-function-name='GyaradosDancer'>add a gyarados bruh</button>
+      <button type = button href = '#' id = 'lineUp'>line em up</button>
       <button type = button href = '#' id = 'resetPosition'>put em back</button> </div>
       <div id = 'gyaradosContainer'> </div>
     <script src="src/init.js"></script>
-    <div class="fullscreen-bg">
-
+    <div class="fullscreen-bg missArea">
     <video loop muted autoplay src="/Users/student/Downloads/background.mp4" class="fullscreen-bg__video">    
     </video>
     </div>

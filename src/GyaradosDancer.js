@@ -2,7 +2,7 @@ var GyaradosDancer = function(top, left, timeBetweenSteps) {
 
   Dancer.call(this, top, left, timeBetweenSteps);
   
-  this.$node = $('<span class = \'gyarados\'> <img id = \'gyarados\' class = \'gyarados\' src="/Users/student/code/hrsf89-subclass-dance-party/super_happy_gyarados_by_csinorman-d7kr9lw.gif"></span>');
+  this.$node = $('<span class = \'gyarados pokemon\'> <img id = \'gyarados\' class = \'gyarados pokemon\' src="/Users/student/code/hrsf89-subclass-dance-party/super_happy_gyarados_by_csinorman-d7kr9lw.gif"></span>');
   
   this.setPosition(this.top, 1960);
   this.move();

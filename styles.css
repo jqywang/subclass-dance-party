@@ -52,14 +52,27 @@ video {
   -moz-transform: scaleX(2);
   object-fit: fill
 }
+.image-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    width: 200px;
+    height: auto;
+}
+.image-wrapper.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
 .title{
   padding:5px 12px;
   float:right;
   background-color: #777;
+  display: inline-block;
 }
 .topbar{
   height:32px;
   background-color: #555;
+  z-index: 9;
 }
 .dancer{
   border:10px solid red;
