@@ -7,6 +7,10 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.$node = $('<span class="dancer"></span>');
   this.setPosition(this.top, this.left);
   this.step();
+  this.originalPosition = {
+    top: this.top,
+    left: this.left
+  };
 };
 
 Dancer.prototype.step = function () {
@@ -14,7 +18,7 @@ Dancer.prototype.step = function () {
 };
 Dancer.prototype.setPosition = function (top, left) {
   var styleSettings = {
-    top: this.top,
+    top: top,
     left: left
   };
   this.$node.css(styleSettings);
@@ -23,32 +27,43 @@ Dancer.prototype.setPosition = function (top, left) {
 Dancer.prototype.lineUp = function (i, side) {
   //leftRight is a string either 'left' or 'right'
   //index is index in the big array of things
+  var eitherOr = Math.floor(Math.random() * 2);
+  // if (i > 18 && eitherOr === 1) {
+  //   i = 18 - i;
+  // }
   if (side === 'left') {
     var styleSettings = {
-      margin: '10px 10px',
-      left: ((i * 30) + 9),
-      top: 170 + i * 10
+      margin: '0 auto',
+      left: ((i * 30) + 400),
+      top: 170,
+      position: 'relative',
+      display: 'block',
     };
   } else if (side === 'right') {
     var styleSettings = {
-      top: 670 - i * 10,
-      left: ((i * 30) - 6),
-      margin: '10px 10px'
+      top: 670,
+      left: ((i * 30) + 390),
+      margin: '0 auto',
+      position: 'relative',
+      display: 'block'
     };
   }
   this.$node.animate(styleSettings, 'slow');
 };
-Dancer.prototype.squareUp = function (i, side) {
-  if (side === 'top') {
-    i = i % 4;
-  } else if (side === 'left') {
-    
-  } else if (side === 'right') {
-    
-  } else {
-    
-  }
+Dancer.prototype.resetPosition = function () {
+  this.$node.animate(this.originalPosition, 'slow');
 };
+// Dancer.prototype.squareUp = function (i, side) {
+//   if (side === 'top') {
+//     i = i % 4;
+//   } else if (side === 'left') {
+    
+//   } else if (side === 'right') {
+    
+//   } else {
+    
+//   }
+// };
 
 
 

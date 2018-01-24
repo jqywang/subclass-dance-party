@@ -27,10 +27,15 @@ $(document).ready(function() {
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
-    $('body').append(dancer.$node);
+    if (dancer.type === 'gyarados') {
+      $('#gyaradosContainer').append(dancer.$node);
+    } else {
+      $('body').append(dancer.$node);
+    }
     if (dancer.type !== 'gyarados') {
       window.dancers.push(dancer);
     }
+    
   });
   
 });

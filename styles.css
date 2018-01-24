@@ -5,10 +5,18 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  font-family: ABeeZee;
 }
-a {
+
+button {
   z-index: 2;
-  position: relative;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -29,7 +37,7 @@ body, a:link, a:visited, a:active{
 }
 
 #gyarados {
-  animation: swing 2s infinite ease-in-out;
+  animation: swing 1s infinite ease-in-out;
 }
 
 .fullscreen-bg__video {
@@ -44,16 +52,14 @@ video {
   -moz-transform: scaleX(2);
   object-fit: fill
 }
-.title, .addDancerButton{
+.title{
   padding:5px 12px;
   float:right;
+  background-color: #777;
 }
 .topbar{
   height:32px;
   background-color: #555;
-}
-.title{
-  background-color: #777;
 }
 .dancer{
   border:10px solid red;

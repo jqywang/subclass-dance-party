@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Object Dance Party</title>
+    <title>PokeGroove</title>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
@@ -12,14 +13,14 @@
   </head>
   <body>
     <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>    
-    
-      <a href = '#' class = 'addDancerButton' data-dancer-maker-function-name = 'SquirtleDancer'> add a spinny turtle   </a> 
-      <a href='#' id= 'spawnGyarados' class='addDancerButton' data-dancer-maker-function-name='GyaradosDancer'>add a gyrados bruh</a></div>
-      
+      <span class="title">PokeGroove &trade; </span>
+      <button type = 'button' href = '#' class = 'addDancerButton' data-dancer-maker-function-name = 'SquirtleDancer'>add a spinny turtle</button>
+      <button type = 'button' href='#' id= 'spawnGyarados' class='addDancerButton' data-dancer-maker-function-name='GyaradosDancer'>add a gyarados bruh</button>
+      <button type = button href = '#' id = 'resetPosition'>put em back</button> </div>
+      <div id = 'gyaradosContainer'> </div>
     <script src="src/init.js"></script>
     <div class="fullscreen-bg">
+
     <video loop muted autoplay src="/Users/student/Downloads/background.mp4" class="fullscreen-bg__video">    
     </video>
     </div>
